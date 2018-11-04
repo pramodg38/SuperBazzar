@@ -1,2 +1,2 @@
 # SuperBazzar
-Super market project for college student.
+Super market project for begginers.
