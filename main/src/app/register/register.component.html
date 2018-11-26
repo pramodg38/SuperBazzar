@@ -1,0 +1,39 @@
+<div id="register_page">
+	<div id="register_body">  
+	
+	<fieldset>
+	<legend> Registration details</legend>
+	<div class="row">
+	<div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+	</div>
+	<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+	<label> User Name  </label><br><br>
+	<label> Password  </label><br><br>
+	<label> First Name  </label><br><br>
+	<label> Last Name  </label><br><br>
+	<label> Email  </label> <br><br>
+	</div>
+	<div class="col-sm-1 col-md-1 col-lg-1 col-xl-1">
+	<label> : </label><br><br>
+	<label> : </label><br><br>
+	<label> : </label><br><br>
+	<label> : </label><br><br>
+	<label> : </label> <br><br>
+	</div>
+	<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+	<form  name="form">
+	    <input type="text"  [(ngModel)]="UserRegisterData.username" name="username" required><br><br>
+		<input type="Password" [(ngModel)]="UserRegisterData.password" name="Password" required><br><br>
+		<input type="text"  [(ngModel)]="UserRegisterData.Fname" name="Fname" required><br><br>
+		<input type="text" [(ngModel)]="UserRegisterData.Lname"  name="Lname" required><br><br>
+		<input type="email" [(ngModel)]="UserRegisterData.Email"   name="Email" required><br><br>
+		<button type="submit" (click)="userRegister();">Register</button><br><br>
+	</form>
+	</div>
+	<div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+	</div>
+	</div>
+	
+	</fieldset>
+  
+</div>

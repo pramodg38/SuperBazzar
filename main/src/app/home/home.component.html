@@ -1,0 +1,18 @@
+<div id="home">
+   <div style="text-align:right;padding-right:30px;">
+   <img src="">
+   <h3><a [routerLink]="['/cart']">Cart</a></h3>
+   </div>
+	<a (click)="offerDetails();"> OFFER 20% OFF </a> 
+	<div class="product_list">
+		<div class="row">
+			<div id="img_block" class="col-sm-3 col-md-3 col-lg-3 col-xl-3" *ngFor="let images of products; let i = index;">
+			
+			<img id="product_imsges" (click)= "getdetails(images.id); " src='{{ images.img_Url}}'>
+			<h3>{{images.name}}</h3>
+			<h3>{{images.price}}</h3>
+			<button class="btn btn-primary"[routerLink]="['/cart', { id:images.id }]">Add to Cart</button>
+			</div>
+		</div>
+	</div>
+</div>
